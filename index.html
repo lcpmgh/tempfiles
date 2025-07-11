@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lcpmgh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f3f7;
+        }
+        header {
+            background-color: #4a8dc5;
+            color: #fff;
+            padding: 5px 5px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 10px auto;
+        }
+        .category {
+            margin-bottom: 5px;
+        }
+        .category h2 {
+			text-align:center;
+			margin: 10px 0;
+            color: #333;
+        }
+        .apps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+		.app {
+			background-color: #fff;
+			padding: 10px;
+			margin: 5px 10px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			width: 22%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: transform 0.3s, box-shadow 0.3s;
+		}
+        .app:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+		.app img {
+			width: 75%;
+			height: auto;
+			aspect-ratio: 1.6 / 1;
+			margin: 0 auto;
+			display: block;
+			border-radius: 5px;
+			border: 2px solid #008DCF; /* 天蓝色边框 */
+		}
+        .app h4 {
+            margin: 2px 0px;
+            font-size: 0.9em;
+        }
+        .app p {
+            margin: 2px 3px;
+            font-size: 0.9em;
+        }
+        .app a {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1.0em;
+            color: black;
+            text-decoration: none;
+        }
+        .app a:hover {
+            text-decoration: none;
+        }
+    </style>
+    <link rel="shortcut icon" href="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/pmgh.ico"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2 style="margin:5px 10px; text-align:left;">Rshiny Apps by pmgh</h2>
+    </header>
+    <div class="container">
+        <div class="category">
+            <h2>使用Shiny创建的工具和笔记</h2>
+            <div class="apps">
+                <div class="app">
+                    <a href="http://lcpmgh.com/scus">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_scus.png" alt="SCUS">
+                    </a>
+					<h4>泥沙贡献分解软件 (SCUS)</h4>
+                    <p>侵蚀泥沙指纹识别技术的绘图、检验和求解</p>
+                </div>
+                <div class="app">
+                    <a href="http://lcpmgh.com/journal">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_journal.png" alt="journal">
+                    </a>
+					<h4>学术期刊质量查询系统</h4>
+                    <p>中英学术期刊质量信息汇总</p>
+                </div>
+                <div class="app">
+                    <a href="http://lcpmgh.com/chemical">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_chemical.png" alt="chemical">
+                    </a>
+					<h4>化学分子量计算器</h4>
+                    <p>根据化学式计算分子量及元素占比</p>
+                </div>	
+                <div class="app">
+                    <a href="http://lcpmgh.com/colors">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_colors.png" alt="colors">
+                    </a>
+					<h4>科研绘图配色推荐器</h4>
+                    <p>收集自顶刊论文的绘图配色方案</p>
+                </div>						
+                <div class="app">
+                    <a href="http://lcpmgh.com/npmcm">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_npmcm.png" alt="npmcm">
+                    </a>
+					<h4>中国研究生数学建模竞赛获奖信息可视化</h4>
+                    <p>数模研赛举办以来的历年获奖情况统计</p>
+                </div>	
+                <div class="app">
+                    <a href="https://lcpmgh.github.io/tempfiles/Rnote/ggplot2academic.html">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_learnggacademic.png" alt="learnggacademic">
+                    </a>
+					<h4>ggplot2科研绘图案例</h4>
+                    <p>科研绘图场景中的ggplot2案例教程</p>
+                </div>	
+                <div class="app">
+                    <a href="https://lcpmgh.github.io/tempfiles/Rnote/MixSIAR_note.html">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_learnmixsiar.png" alt="learnmixsiar">
+                    </a>
+					<h4>MixSIAR案例笔记</h4>
+                    <p>贝叶斯物源分析工具MixSIAR的使用笔记</p>
+                </div>	
+                <div class="app">
+                    <a href="https://lcpmgh.github.io/tempfiles/Rnote/ggplot2matplotlib50.html">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_learnggmatplotlib50.png" alt="learnggmatplotlib50">
+                    </a>
+					<h4>ggplot2版50个matplotlib常用可视化图</h4>
+                    <p>用ggplot2复刻50个matplotlib常用可视化图</p>
+                </div>                
+				<div class="app">
+                    <a href="https://lcpmgh.github.io/tempfiles/Rnote/learn_rda.html">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_learnrda.png" alt="learnrda">
+                    </a>
+					<h4>RDA笔记</h4>
+                    <p>R语言冗余分析笔记</p>
+                </div>	 
+				<div class="app">
+                    <a href="https://lcpmgh.github.io/tempfiles/Rnote/learn_brms.html">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_learnbrms.png" alt="learnbrms">
+                    </a>
+					<h4>brms笔记</h4>
+                    <p>贝叶斯建模brms包笔记</p>
+                </div>	
+				<div class="app">
+                    <a href="https://lcpmgh.github.io/tempfiles/Rnote/learn_echarty_map.html">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_learnechartymap.png" alt="learnechartymap">
+                    </a>
+					<h4>echarty画地图笔记</h4>
+                    <p>使用echarty实现ECharts地图</p>
+                </div>	
+                <div class="app">
+                    <a href="https://lcpmgh.github.io/tempfiles/Rnote/statistic_test.html">
+                        <img src="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/app_learnstatistictest.png" alt="learnstatistictest">
+                    </a>
+					<h4>统计检验笔记</h4>
+                    <p>总结常用统计检验的理论与R代码</p>
+                </div>				
+                <!-- 继续添加更多：科研工具apps -->
+            </div>
+        </div>
+<!--            
+                <div class="app">
+                    <a href="http://lcpmgh.com/smooth">
+                        <img src="aaapicture/app_smooth.png" alt="smooth">
+                    </a>
+					<h4>PDF文字复制优化</h4>
+                    <p>将从PDF复制的文字优化为无换行半角纯文本</p>
+                </div>	
+        <div class="category">
+            <h2>其他工具和教程</h2>
+            <div class="apps">                
+                <div class="app">
+                    <a href="http://lcpmgh.com/count">
+                        <img src="aaapicture/app_count.png" alt="count">
+                    </a>
+					<h4>计数程序</h4>
+                    <p>计数程序</p>
+                </div>	
+            </div>
+        </div>
+        <div class="category">
+            <h2>其他工具</h2>
+            <div class="apps">
+				<div class="app">
+                    <a href="http://lcpmgh.com/investment">
+                        <img src="aaapicture/app_investment.png" alt="investment">
+                    </a>
+					<h4>投资理财可视化</h4>
+                    <p>某理财产品业绩情况的爬虫和可视化</p>
+                </div>
+            </div>
+        </div>	
+-->				
+        <!-- 继续添加更多category -->		
+    </div> 
+
+<footer style="background-color: #f4f4f4; color: #333; padding: 10px 0; text-align: center;font-size: 0.7em; border-top: 1px solid #ddd;">
+    <div>
+        <p style="margin: 0;display:inline">© 2021-2025, Lcpmgh, All rights reserved.</p>
+        <a target="_blank" href="https://github.com/lcpmgh" style="color: #06c; margin: 0 5px; text-decoration: none;">
+            <i class="fab fa-github"></i> Github
+        </a>
+        <a href="mailto:lcpmgh@gmail.com" style="color: #06c; margin: 0 5px; text-decoration: none;">
+            <i class="fas fa-envelope"></i> lcpmgh@gmail.com
+        </a>
+        <a href="http://lcpmgh.com" style="color: #06c; margin: 0 5px; text-decoration: none;">
+            <i class="fas fa-home"></i> lcpmgh.com
+        </a>
+        <a target="_blank" href="https://beian.miit.gov.cn" style="color: #06c; margin: 0 5px; text-decoration: none;">冀ICP备2022003075号</a>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702002736" style="color: #06c; margin: 0 5px; text-decoration: none;">川公网安备51010702002736</a>
+    </div>
+</footer>
+</body>
+</html>
