@@ -2087,7 +2087,7 @@ ggplot(df, aes(y = reorder(cars, mpg_z), x = mpg_z))+
 <h1>14. 面积图</h1>
 <p>Area Chart</p>
 <p>通过对轴和线之间的区域进行着色，面积图不仅更加强调波峰和波谷，还更加强调高点和低点的持续时间。高点持续时间越长，线下面积越大。</p>
-<p>这个图需要注意，如果不填充不同颜色，则没什么问题，一旦要以x轴为分界，上下填充不同颜色，则需要差值以增加数据密度。。</p>
+<p>这个图需要注意，如果不填充不同颜色，则没什么问题，一旦要以x轴为分界，上下填充不同颜色，则需要差值以增加数据密度。</p>
 <pre class="r"><code>#显示英文日期名
 Sys.setlocale(category = &quot;LC_TIME&quot;, locale = &quot;English&quot;) </code></pre>
 <pre><code>## [1] &quot;English_United States.1252&quot;</code></pre>
@@ -2104,7 +2104,7 @@ dat_interp = function(x, y, line = 0, length.out=500) {
   res[y &gt;= line, value:=&quot;greater&quot;]
   return(res)
 }
-# 这个数据与ggplot::economics数值稍有差异，这里没用R内部数据
+# 这个数据与ggplot2::economics数值稍有差异，这里没用R内部数据
 # df &lt;- fread(&quot;https://github.com/selva86/datasets/raw/master/economics.csv&quot;)
 df &lt;- fread(&quot;data5_economics.csv&quot;) %&gt;% .[1:100,]
 df[, returns:=c(0,diff(df$psavert)/df$psavert[1:99])*100] #注意这里的计算方法，本期增长率=(本期-上期)/上期
