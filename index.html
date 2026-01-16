@@ -77,6 +77,28 @@
         .app a:hover {
             text-decoration: none;
         }
+				#footer-container {
+		  text-align: center;
+		  font-size: 13px;
+		  color: #666666;
+		  line-height: 0.8;
+		  margin: 12px 0;
+		}
+		#footer-container a {
+		  color: #0066cc;
+		  text-decoration: none;
+		  margin: 0 2px;
+		}
+		.footer-links,
+		.footer-records {
+		  display: inline-flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  gap: 10px;
+		}
+		.footer-links i {
+		  margin-right: 4px;
+		}
     </style>
     <link rel="shortcut icon" href="https://lcpmgh.github.io/tempfiles/Rnote/aaapicture/pmgh.ico"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -219,21 +241,44 @@
         <!-- 继续添加更多category -->		
 	</div>  
 
-<footer style="background-color: #f4f4f4; color: #333; padding: 10px 0; text-align: center;font-size: 0.7em; border-top: 1px solid #ddd;">
-    <div>
-        <p style="margin: 0;display:inline">© 2021-2025, Lcpmgh, All rights reserved.</p>
-        <a target="_blank" href="https://github.com/lcpmgh" style="color: #06c; margin: 0 5px; text-decoration: none;">
-            <i class="fab fa-github"></i> Github
-        </a>
-        <a href="mailto:lcpmgh@gmail.com" style="color: #06c; margin: 0 5px; text-decoration: none;">
-            <i class="fas fa-envelope"></i> lcpmgh@gmail.com
-        </a>
-        <a href="http://lcpmgh.com" style="color: #06c; margin: 0 5px; text-decoration: none;">
-            <i class="fas fa-home"></i> lcpmgh.com
-        </a>
-        <a target="_blank" href="https://beian.miit.gov.cn" style="color: #06c; margin: 0 5px; text-decoration: none;">冀ICP备2022003075号</a>
-        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702002736" style="color: #06c; margin: 0 5px; text-decoration: none;">川公网安备51010702002736</a>
+  <footer id="footer-container">
+    <p>
+      © <span id="copyright-year"></span>, Lcpmgh. All rights reserved.
+    </p>
+
+    <div class="footer-links">
+      <a href="https://github.com/lcpmgh" target="_blank">
+        <i class="fa-brands fa-github"></i> lcpmgh
+      </a>
+      <a href="mailto:lcpmgh@gmail.com">
+        <i class="fa-solid fa-envelope"></i> lcpmgh@gmail.com
+      </a>
+      <a href="http://lcpmgh.com/" target="_blank">
+        <i class="fa-solid fa-house"></i> lcpmgh.com
+      </a>
     </div>
-</footer>
+
+    <div class="footer-records">
+      <a href="https://beian.miit.gov.cn" target="_blank">
+        冀ICP备2022003075号
+      </a>
+      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702002736" target="_blank">
+        川公网安备51010702002736
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const startYear = 2021;
+      const currentYear = new Date().getFullYear();
+      const yearText =
+        currentYear > startYear
+          ? `${startYear}–${currentYear}`
+          : `${startYear}`;
+
+      document.getElementById("copyright-year").textContent = yearText;
+    })();
+  </script>
 </body>
 </html>
